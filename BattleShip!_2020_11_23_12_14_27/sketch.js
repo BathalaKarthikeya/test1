@@ -42,7 +42,7 @@ var bulletGroup;
 var coinGroup;
 
 //gamestate.
-var gameState = "start";
+var gameState = "play";
 
 //declare the variables for the sound effects.
 var gunshot;
