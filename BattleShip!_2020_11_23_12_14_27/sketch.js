@@ -42,7 +42,7 @@ var bulletGroup;
 var coinGroup;
 
 //gamestate.
-var gameState = "play";
+var gameState = "start";
 
 //declare the variables for the sound effects.
 var gunshot;
@@ -136,7 +136,7 @@ function setup() {
 
   //create a shoot button sprite and set an image.
   shoot_but = createSprite(width - 200, height - 100, 30, 30);
-  shoot_but.scale = 0.1;
+  shoot_but.scale = 0.01;
   shoot_but.addImage(shoot_but_img)
 
   //create a start button sprite and set an image.
@@ -151,7 +151,7 @@ function setup() {
   reset_but.scale = 0.1;
 
   next_but = createSprite(width / 2, height - 200, 30, 30);
-  next_but.scale = 0.6;
+  next_but.scale = 0.1;
   next_but.addImage(next_but_img);
   next_but.visible = false;
 
@@ -164,6 +164,7 @@ function setup() {
 
   //an earth sprite is created.
   earth = createSprite(windowWidth / 2, windowHeight - 100, 20, 20);
+  earth.scale = 0.3;
   earth.addImage(earth_img);
   earth.visible = false;
 
@@ -233,7 +234,7 @@ function setup() {
   //title of the game.
   title = createDiv("BattleShip!!_👾");
   title.position(width - 1300, height - 700);
-  title.style('font-size', '150px');
+  title.style('font-size', '100px');
   title.style('color', 'red');
 
   //instruction.
